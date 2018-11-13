@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Response plugin demo</title>
+
+	<link rel="stylesheet" href="dist/css/basicResponsiveMenu.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="dist/js/basicResponsiveMenu.js"></script>
+	<script>
+		$(function(){
+			$('.response--main-navigation').basicResponsiveMenu({
+				browserWidth:768
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav class="response--main-navigation">
+		<ul class="response--site-menu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Cases</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
