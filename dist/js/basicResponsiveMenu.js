@@ -1,7 +1,21 @@
 $.fn.basicResponsiveMenu = function(options) {
 
+  var defaults = {
+    browserWidth:     768,
+		slideDir:					'right',
+		slideSpeed:				250
+  };
+
+	var options = $.extend({}, defaults, options);
+
 	//var browserWidth = options.browserWidth;
 	//var slideDir = options.slideDir;
+
+  if(options.slideDir === 'left'){
+  	$('.response--main-navigation').addClass('slideLeft').removeClass('slideRight');
+  }else {
+  	$('.response--main-navigation').addClass('slideRight').removeClass('slideLeft');
+  }
 
 	// get width of browser window
   function getWidth() {
