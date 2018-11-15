@@ -2,6 +2,7 @@ $.fn.basicResponsiveMenu = function(options) {
 
   var defaults = {
     browserWidth:     768,
+    animate:          true,
 		slideDir:					'right',
 		slideSpeed:				250
   };
@@ -34,7 +35,9 @@ $.fn.basicResponsiveMenu = function(options) {
 	function mobileNav(){
 		$('.response--main-navigation').addClass('mobile-nav');
 
-		$('.response--main-navigation .response--site-menu').css({'transition':options.slideSpeed+'ms'});
+    if(options.animate === true){
+		    $('.response--main-navigation .response--site-menu').css({'transition':options.slideSpeed+'ms'});
+    }
 
 		// if buttons with a class of show-nav and hide-nav don't exist, add them
 		var showNav = $('.response--main-navigation').children('button.show-nav');
