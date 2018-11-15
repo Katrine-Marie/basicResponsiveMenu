@@ -47,9 +47,9 @@ $(function(){
 If you wish to change the default options, you can do it as follows:
 ```
 $('.response--main-navigation').basicResponsiveMenu({
-		browserWidth:960,
-		slideDir:'left',
-		slideSpeed:400
+	browserWidth:960,
+	slideDir:'left',
+	slideSpeed:400
 });
 ```
 
