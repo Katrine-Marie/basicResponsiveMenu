@@ -2,7 +2,7 @@
 
 This plugin gives you a responsive menu with as little hassle as possible.
 
-The `index.html` is a demo file, showing an example markup.
+The `index.html` is a demo file, showing an example markup. The plugin files can be found in the `dist` folder.
 
 ## How To Use
 
