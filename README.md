@@ -38,9 +38,9 @@ and
 You initialize the plugin with:
 ```
 <script>
-		$(function(){
-		  $('.response--main-navigation').basicResponsiveMenu();
-    });
+$(function(){
+	$('.response--main-navigation').basicResponsiveMenu();
+});
 </script>
 ```
 
